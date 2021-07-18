@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.flexContainer_courses{
+  display:'flex';
+  flex-flow: row wrap;
+}
+.flex-big{
+  width:'30%';
+  flex: 2 2 0;
+}
+.flex-small{
+  flex: 1 1 0;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+.modifyowButtons{
+  border: none;
+  background: none;
+  font-size:22px;
+}
+.ModifyButtonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  padding: 15px 0px;
+  border: dotted;
+}
+
+
+.btn-gradDel {background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%)}
+.btn-gradDel {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   float: right;
+   margin: 25px 10px;
+ }
+
+ .btn-gradDel:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .btn-gradAdd {background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%)}
+ .btn-gradAdd {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-gradAdd:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+ .cgpaContainer{
+   display: flex;
+   justify-content: space-between;
+   text-align: left;
+ }
+ .cgpa {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 7vw;
+}
+.middleLine {
+  border: 10px solid #2B4141;
+  border-radius: 5px;
+}
