@@ -1,0 +1,35 @@
+@media screen and (max-width: 520px) {
+    .btn-gradDel {
+        float: none;
+    }
+    .introText{
+        font-size:18px;
+    }
+    .sideNav {
+        margin: 0vw 10vw;
+    }
+}
+@media screen and (max-width: 401px) {
+    .btn-gradDel {
+        margin: 10px 0px;
+        padding: 15px 30px;
+    }
+    .modifyowButtons {
+        font-size: 18px;
+    }
+    .sideNav {
+        margin: 1vw;
+    }
+    .introText{
+        line-height: 28px;
+        font-size:16px;
+    }
+    
+}
+@media screen and (max-width: 350px) {
+    .introText{
+        line-height: 24px;
+        font-size:12px;
+    }
+    
+}

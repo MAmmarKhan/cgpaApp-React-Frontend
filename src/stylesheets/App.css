@@ -103,3 +103,18 @@
   border: 10px solid #2B4141;
   border-radius: 5px;
 }
+.mainContainer{
+  padding-bottom: 10px;
+}
+.sideNav{
+  margin: 0vw 15vw;
+}
+.introText{
+  color:'#BBBAAA';
+  font-size:20px;
+  line-height: 35px;
+  text-align: justify;
+}
+.introImage{
+  width: 250;
+}

@@ -1,14 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
+import $ from 'jquery';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateCourse } from '../redux/calculatorSlice';
 import { setName } from '../redux/rowSlice';
 
 export function GpaInput() {
-  const [nameInput, setNameInput] = useState('a');
-
+  
   const rows = useSelector((state) => state.rowCounter.rows);
   const courses = useSelector((state) => state.counter);
-  // console.log(rows);
   const dispatch = useDispatch();
 
   function updateCourseDetail(id){
@@ -18,9 +17,7 @@ export function GpaInput() {
   }
 
   function handleChange(e) {
-    console.log(e.target.value);
-    setNameInput(e.target.value);
-    dispatch(setName(nameInput));
+    dispatch(setName( $('#username').val()));
   }
 
   return (
@@ -31,9 +28,10 @@ export function GpaInput() {
         {courses.gpa.slice(0, rows).map((data,index) => (
           <div className="flexContainer_courses">
             <div className="flex-big">
-              <input type="text" class="form-control rounded-0" placeholder={"Course "+(index+1)}></input>
+              <input disabled type="text" class="form-control rounded-0" placeholder={"Course "+(index+1)}></input>
             </div>
             <div className="flex-small">
+            
               <select class="custom-select text-muted rounded-0" id={'grade'+index} style={{width:'50%'}} onChange={() => {updateCourseDetail(index)}}>
                 <option value={0} selected>Grade</option>
                 <option value={4.00}>A</option>

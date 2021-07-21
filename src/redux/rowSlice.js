@@ -1,10 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-//////////////////////////////////
 
-// GPA = Grade * Credit Hours
-// CGPA = Sum (Grade * Credit Hours) / Credit Hours
-
-//////////////////////////////////
 const initialState = {
   rows: 4,
   name:'Student'

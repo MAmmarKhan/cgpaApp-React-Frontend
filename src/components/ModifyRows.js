@@ -1,13 +1,10 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { increment, decrement } from '../redux/rowSlice';
 import { addCourse,deleteCourse } from '../redux/calculatorSlice';
 import { CalculateCGPA } from '../calculatingMethod/calcMethods';
 
 export function ModifyRows() {
-
-  const rows = useSelector((state) => state.rowCounter.rows);
-  console.log(rows);
   const dispatch = useDispatch();
   
   return (
