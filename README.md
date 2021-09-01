@@ -4,7 +4,7 @@ This project contains
 
 ## Deployed At
 
-[Surge] 
+[Surge] https://cgpa-fox.surge.sh/
 
 ### `npm start`
 
